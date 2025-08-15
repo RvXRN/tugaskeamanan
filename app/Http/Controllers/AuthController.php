@@ -99,6 +99,6 @@ class AuthController extends Controller
         $request->session()->invalidate(); // Menghapus data sesi
         $request->session()->regenerateToken(); // Menyegarkan token CSRF
         session()->forget('login_attempts');
-        return redirect('/login'); // Mengarahkan pengguna ke halaman depan setelah logout
+        return redirect('/login '); // Mengarahkan pengguna ke halaman depan setelah logout
     }
 }
